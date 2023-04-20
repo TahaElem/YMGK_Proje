@@ -7,6 +7,7 @@ public class tasi : MonoBehaviour
     Camera kamera;
     Vector2 baslangic_pos;
     GameObject[] kutu_dizisi;
+    Yonetim yonet;
 
 
     private void OnMouseDrag() 
@@ -21,6 +22,7 @@ public class tasi : MonoBehaviour
         kamera = GameObject.Find("Main Camera").GetComponent<Camera>();
         baslangic_pos = transform.position;
         kutu_dizisi = GameObject.FindGameObjectsWithTag("kutu");
+        yonet = GameObject.Find("yonetim").GetComponent<Yonetim>();
     }
 
     // Update is called once per frame
@@ -39,11 +41,14 @@ public class tasi : MonoBehaviour
                     if (mesafe<=1)
                     {
                         transform.position = kutu.transform.position;
+                        yonet.sayi_artir();
+                        this.enabled = false;
 
                     }
-                    else
+                    else if(mesafe>1)
                     {
                         transform.position = baslangic_pos;
+                        yonet.Can_kontrol();//düzenle
                     }
 
                 }
