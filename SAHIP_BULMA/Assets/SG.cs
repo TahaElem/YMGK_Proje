@@ -15,14 +15,18 @@ public class SG : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space ))
+        {
+            SceneManager.LoadScene(1);
+        }
     }
-    public void play() 
+    public void sahnegec() 
     {
         SceneManager.LoadScene(1);
+       
     
     }
-    public void exit()
+    public void cikis()
     {
         Application.Quit();
     }

@@ -1,0 +1,4 @@
+Grafikler tasarlanıp yeni sahneye entegre edildi
+- yeni harita
+-yeni ev objeleri
+- sürükle bırak işlevleri eklendi
