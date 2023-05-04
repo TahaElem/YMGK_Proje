@@ -39,7 +39,7 @@ public class SG : MonoBehaviour
     }
     public void panel_goster()
     {
-         Time.timeScale = 0;//tüm hareketi baþlat
+         Time.timeScale = 0;//tüm hareketi baslat
         
         panel_bilgi.SetActive(true);
     }

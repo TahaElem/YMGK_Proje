@@ -45,8 +45,8 @@ public class tasi : MonoBehaviour
                     if (mesafe<=1)
                     {
                         transform.position = kutu.transform.position;
-                        
-                        yonet.sayi_artir();
+
+                        yonet.puan_artir(100);
                         this.enabled = false;
 
                     }
