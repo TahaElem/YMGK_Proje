@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 2048
     height: 1060.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Inspector
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -120,10 +120,10 @@ MonoBehaviour:
     y: 30
     width: 2048
     height: 1010.80005
-  m_MinSize: {x: 708, y: 492}
-  m_MaxSize: {x: 18003, y: 14042}
+  m_MinSize: {x: 709, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 3950
+  controlID: 65
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 4018
+  controlID: 17
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 3996
+  controlID: 66
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -303,8 +303,8 @@ MonoBehaviour:
     y: 0
     width: 470.40002
     height: 1010.80005
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -435,9 +435,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.8685493, y: 2.1853578, z: -13.74219}
+    m_Target: {x: -7.942732, y: 0.50244033, z: -85.580414}
     speed: 2
-    m_Value: {x: -5.8685493, y: 2.1853578, z: -13.74219}
+    m_Value: {x: -7.942732, y: 0.50244033, z: -85.580414}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -488,9 +488,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.832616
+    m_Target: 6.9275947
     speed: 2
-    m_Value: 5.832616
+    m_Value: 6.9275947
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -536,13 +536,13 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 746.4
-    width: 1228.6
-    height: 317.00006
+    y: 483.2
+    width: 1180.6
+    height: 580.2001
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -4600
+  m_LastSelectedObjectID: -17856
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -858,9 +858,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 54c7ffff
-      m_LastClickedID: -14508
-      m_ExpandedIDs: d2d0fffff8dcffff1ce1ffff30e1ffff44e1ffff7ce1ffff00efffff72faffff88faffff60fbffff524500005c450000a6640000
+      m_SelectedIDs: 40baffff
+      m_LastClickedID: -17856
+      m_ExpandedIDs: 8097fffffc9bffffaac0ffffcaecffff60fbffffda410000e2410000fe4200005c430000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -876,7 +876,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 10}
+        m_ClientGUIView: {fileID: 7}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -947,22 +947,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/sahne2/materyaller/buttonlar
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/sahne2/materyaller/buttonlar
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\DRAGON\SAHIP_BULMA
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9a430000
-    m_LastClickedID: 17306
-    m_ExpandedIDs: 000000009a4300009c43000000ca9a3b
+    m_SelectedIDs: be660000
+    m_LastClickedID: 26302
+    m_ExpandedIDs: 0000000034440000364400003e4400007e66000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -990,7 +990,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009a4300009c43000000ca9a3b
+    m_ExpandedIDs: 000000003444000036440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

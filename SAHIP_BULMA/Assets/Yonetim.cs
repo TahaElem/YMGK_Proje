@@ -5,7 +5,7 @@ using UnityEngine;
 public class Yonetim : MonoBehaviour
 {
     int yerlesen_parca=0;
-    int toplam_parca = 20;
+   public int toplam_parca = 20;
     int can;//3 yanlýþ hakkýn var
     int sure = 60;// oyun süresi
 
@@ -13,6 +13,7 @@ public class Yonetim : MonoBehaviour
     void Start()
     {
         can = 3;
+        
     }
     public void sayi_artir() 
     {

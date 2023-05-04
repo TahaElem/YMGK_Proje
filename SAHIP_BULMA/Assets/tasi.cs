@@ -23,6 +23,10 @@ public class tasi : MonoBehaviour
         baslangic_pos = transform.position;
         kutu_dizisi = GameObject.FindGameObjectsWithTag("kutu");
         yonet = GameObject.Find("yonetim").GetComponent<Yonetim>();
+
+        Yonetim obje= new Yonetim();//toplam parçayý dizi eleman sayýsýna eþitleme
+        obje.toplam_parca = kutu_dizisi.Length;
+
     }
 
     // Update is called once per frame
@@ -41,6 +45,7 @@ public class tasi : MonoBehaviour
                     if (mesafe<=1)
                     {
                         transform.position = kutu.transform.position;
+                        
                         yonet.sayi_artir();
                         this.enabled = false;
 
