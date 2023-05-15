@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SG : MonoBehaviour
 {
-    public GameObject panel_bilgi;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -32,17 +32,7 @@ public class SG : MonoBehaviour
         Application.Quit();
     }
 
-    public void panel_gizle() {
-        Time.timeScale = 1;//tüm hareketi durdur
-
-        panel_bilgi.SetActive(false);
-    }
-    public void panel_goster()
-    {
-         Time.timeScale = 0;//tüm hareketi baslat
-        
-        panel_bilgi.SetActive(true);
-    }
+   
 
 
 }

@@ -10,5 +10,11 @@ EditorBuildSettings:
     guid: 5a11115e5f2fc6d4995052937f1ad6cb
   - enabled: 1
     path: Assets/Scenes/oyun1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 871f47bba012ebb4e833ba386e34efc8
+  - enabled: 1
+    path: Assets/Scenes/oyun2.unity
+    guid: 3bfb9718d69707d4997d478ecace48af
+  - enabled: 1
+    path: Assets/Scenes/oyun3.unity
+    guid: e77de0e2291a753459939dbc36395b78
   m_configObjects: {}

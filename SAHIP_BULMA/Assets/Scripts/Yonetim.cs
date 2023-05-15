@@ -21,6 +21,7 @@ public class Yonetim : MonoBehaviour
     public GameObject kaybet_pnl;
     public GameObject kazandin_pnl;
     public GameObject bilgi_pnl;
+    public bool panel_acik = false;
     public TextMeshProUGUI saniye_txt;
     public TextMeshProUGUI puan_txt;
     public TextMeshProUGUI hedef_puan_txt;
@@ -73,19 +74,23 @@ public class Yonetim : MonoBehaviour
     //saniye azaltma methodu
     void saniye_azalt()
     {
-        saniye--;
-        saniye_txt.text = saniye.ToString();
-
-        if (saniye == 10)
+        if (!panel_acik)
         {
-            kritikzamansesi.Play();
-        }
-        if (saniye<=0)
-        {
-            kaybettin();
+            saniye--;
+            saniye_txt.text = saniye.ToString();
+
+            if (saniye == 10)
+            {
+                kritikzamansesi.Play();
+            }
+            if (saniye <= 0)
+            {
+                kaybettin();
+
+            }
 
         }
-    
+       
     }
     public void puan_artir(int deger) {
         puan+=deger;
@@ -96,8 +101,9 @@ public class Yonetim : MonoBehaviour
         if (puan>=hedef_puan)
         {
             arkaplanses.Stop();
-            Time.timeScale = 0.0f;
+            Time.timeScale = 1.0f;
             kazandin_pnl.SetActive(true);
+            panel_acik = true;
             kazandinses.Play();
             Debug.Log("kazandın");
         }
@@ -108,8 +114,9 @@ public class Yonetim : MonoBehaviour
     void kaybettin() {
         arkaplanses.Stop();
         kaybet_pnl.SetActive(true);
-       kaybettinses.Play();
-        Time.timeScale = 0.0f;
+        panel_acik = true;
+        kaybettinses.Play();
+        Time.timeScale = 1.0f;
     
     }
    public void tekrar_oyna()
@@ -117,6 +124,21 @@ public class Yonetim : MonoBehaviour
         
         Time.timeScale = 1.0f;//sahne zamanı durdur
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);//aktif sahnenin indexini alır
+
+    }
+
+    public void sonraki_sahne()
+    {
+
+        Time.timeScale = 1.0f;//sahne zamanı durdur
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);//aktif sahnenin indexini alır
+
+    }
+    public void ilk_sahne()
+    {
+
+        Time.timeScale = 1.0f;//sahne zamanı durdur
+        SceneManager.LoadScene(0);//aktif sahnenin indexini alır
 
     }
     public void cikis()
@@ -128,14 +150,38 @@ public class Yonetim : MonoBehaviour
     public void devam_et()
     {
         Time.timeScale = 1.0f;
-        kaybet_pnl.SetActive(false);//durdur paneli açılacak
+        kaybet_pnl.SetActive(false);//durdur paneli gizle
+        panel_acik = false;
+       
 
     }
     public void durdur_btn()
     {
         Time.timeScale = 0.0f;
         bilgi_pnl.SetActive(true);
+        panel_acik = true;
 
+    }
+    public void bilgi_panel_gizle()
+    {
+        Time.timeScale = 1;//tüm hareketi aç
+
+        bilgi_pnl.SetActive(false);
+        panel_acik = false;
+        if (saniye <= 10)
+        {
+            kritikzamansesi.Play();
+        }
+    }
+    public void bilgi_panel_goster()
+    {
+        Time.timeScale = 1;//tüm hareketi baslat
+        if (saniye <= 10)
+        {
+            kritikzamansesi.Pause();
+        }
+        bilgi_pnl.SetActive(true);
+        panel_acik = true;
     }
 
     #endregion methotlar

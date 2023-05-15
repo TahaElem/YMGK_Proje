@@ -51,6 +51,7 @@ public class tasi : MonoBehaviour
 
                         yonet.puan_artir(100);
                         this.enabled = false;
+                      
 
                     }
                     else if(mesafe>1)
