@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 2032
     height: 1046.4
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Build Settings
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 872}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 2032
     height: 1046.4
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 872}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -120,10 +120,10 @@ MonoBehaviour:
     y: 30
     width: 2032
     height: 996.4
-  m_MinSize: {x: 709, y: 492}
+  m_MinSize: {x: 1139, y: 822}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 68
+  controlID: 136
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,10 +145,10 @@ MonoBehaviour:
     y: 0
     width: 1172
     height: 996.4
-  m_MinSize: {x: 201, y: 442}
+  m_MinSize: {x: 631, y: 822}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 41
+  controlID: 17
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: BuildPlayerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -194,9 +194,9 @@ MonoBehaviour:
     y: 395.2
     width: 1172
     height: 601.2
-  m_MinSize: {x: 201, y: 221}
+  m_MinSize: {x: 631, y: 601}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 13}
   - {fileID: 15}
@@ -204,8 +204,8 @@ MonoBehaviour:
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 5
+  m_Selected: 5
+  m_LastSelected: 0
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 69
+  controlID: 91
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -366,7 +366,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -379,7 +379,7 @@ MonoBehaviour:
       y: 21
       width: 1171
       height: 559.2
-    m_Scale: {x: 0.6472222, y: 0.6472222}
+    m_Scale: {x: 0.6715278, y: 0.6715278}
     m_Translation: {x: 585.5, y: 279.6}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -387,12 +387,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -904.6352
-      y: -432
-      width: 1809.2704
-      height: 864
+      x: -871.8924
+      y: -416.364
+      width: 1743.7848
+      height: 832.728
     m_MinimalGUI: 1
-  m_defaultScale: 0.6472222
+  m_defaultScale: 0.6715278
   m_LastWindowPixelSize: {x: 1463.75, y: 725.25}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -877,9 +877,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 54460000
+      m_SelectedIDs: 62460000
       m_LastClickedID: 0
-      m_ExpandedIDs: deecfffffcecffff1aedffff48edffffb6edffff16eeffff10f3ffff2ef3ffffaaf3ffffc4f3ffffcaf3ffff16f4fffffaf4ffff14f5ffffd4f5ffffe2f5fffff0f5fffffef5ffff0cf6ffff78f9ffff60fbffffe0730000aa7f0000
+      m_ExpandedIDs: a6faffff60fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -979,9 +979,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3a460000
-    m_LastClickedID: 17978
-    m_ExpandedIDs: 000000002a4600002c46000000ca9a3b
+    m_SelectedIDs: 52460000
+    m_LastClickedID: 18002
+    m_ExpandedIDs: 00000000424600004446000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1009,7 +1009,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002a4600002c460000
+    m_ExpandedIDs: 000000004246000044460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
