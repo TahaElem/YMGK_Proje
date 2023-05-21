@@ -33,7 +33,7 @@ public class tasi : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update ()
     {
 
         if (Input.GetMouseButtonUp(0))
@@ -51,6 +51,7 @@ public class tasi : MonoBehaviour
 
                         yonet.puan_artir(100);
                         this.enabled = false;
+                       
                       
 
                     }
@@ -66,4 +67,12 @@ public class tasi : MonoBehaviour
         }
         
     }
+
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag(""))
+    //    {
+
+    //    }
+    //}
 }
